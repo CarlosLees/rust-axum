@@ -8,14 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18f4145d-d29e-48b0-a6e8-aa8b521487f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/hello-axum.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/person.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/person.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pb/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pb/person.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/build.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/person.rs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/person.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pb/person.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pb/person.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +142,8 @@
       <workItem from="1664782771276" duration="104000" />
       <workItem from="1664782890369" duration="209000" />
       <workItem from="1665026265578" duration="3142000" />
+      <workItem from="1665030474268" duration="506000" />
+      <workItem from="1665031022119" duration="911000" />
     </task>
     <servers />
   </component>

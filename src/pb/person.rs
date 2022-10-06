@@ -26,6 +26,19 @@ pub mod person {
         Home = 1,
         Work = 2,
     }
+    impl PhoneType {
+        /// String value of the enum field names used in the ProtoBuf definition.
+        ///
+        /// The values are not transformed in any way and thus are considered stable
+        /// (if the ProtoBuf definition does not change) and safe for programmatic use.
+        pub fn as_str_name(&self) -> &'static str {
+            match self {
+                PhoneType::Mobile => "MOBILE",
+                PhoneType::Home => "HOME",
+                PhoneType::Work => "WORK",
+            }
+        }
+    }
 }
 /// Our address book file is just one of these.
 #[derive(Clone, PartialEq, ::prost::Message)]
