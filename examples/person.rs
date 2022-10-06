@@ -8,11 +8,10 @@ fn main() {
     let person = Person::new("张三",1,"101.com",phone_number);
 
     let v1 = person.encode_to_vec();
-    let v2 = person.encode_length_delimited_to_vec();
+    let _v2 = person.encode_length_delimited_to_vec();
 
-    let person1 = Person::decode(v1.as_ref()).unwrap();
+    let _person1 = Person::decode(v1.as_ref()).unwrap();
 
-    println!("person:{:?}",person);
-    println!("v2:{:?}",v2);
-    println!("person1:{:?}",person1);
+    let json = serde_json::to_string_pretty(&person).unwrap();
+    println!("{}",json);
 }

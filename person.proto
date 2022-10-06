@@ -5,6 +5,9 @@ message Person {
   string name = 1;
   int32 id = 2;  // Unique ID number for this person.
   string email = 3;
+  bytes data = 4;
+  map<string, int32> scores = 5;
+
 
   enum PhoneType {
     MOBILE = 0;
@@ -17,7 +20,7 @@ message Person {
     PhoneType phone_type = 2;
   }
 
-  repeated PhoneNumber phones = 4;
+  repeated PhoneNumber phones = 6;
 }
 
 // Our address book file is just one of these.

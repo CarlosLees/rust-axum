@@ -5,5 +5,10 @@ fn main() -> std::io::Result<()> {
     // prost_build::compile_protos(&["person.proto"],&["."]).unwrap()
 
     //指定具体生成的路径
-    Config::new().out_dir("src/pb").compile_protos(&["person.proto"],&["."])
+    Config::new().out_dir("src/pb")
+    // .bytes(&["."]) //自定义数据的类型
+    .btree_map(&["scores"])
+    .type_attribute(".", "#[derive(serde::Serialize,serde::Deserialize)]")//添加自定义derive
+    .field_attribute("data", "#[serde(skip_serializing_if = \"Vec::is_empty\")]")//自定义添加字段
+    .compile_protos(&["person.proto"],&["."])
 }

@@ -9,7 +9,8 @@ impl Person {
             name: name.into(),
             id,
             email: email.into(),
-            phones: phones.into()
+            phones: phones.into(),
+            ..Default::default()
         }
     }
 }
